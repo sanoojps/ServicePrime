@@ -233,7 +233,12 @@ Step 9) Configuring the service
                 ServiceAccount.LocalSystem;
 
 
-				
+		step e)  //add ServiceInstaller and 
+                  //ServiceProcessInstaller to the
+                    //Installers Collection
+
+            this.Installers.Add(_processInstaller);
+            this.Installers.Add(_serviceInstaller);				
 	    
 
 
